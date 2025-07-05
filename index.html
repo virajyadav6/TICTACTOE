@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+<div id="modeModal" class="modal">
+  <div class="modal-content">
+    <p>Choose Game Mode:</p>
+    <div id="modeButtons">
+      <button id="playerMode" class="btn">Play vs Player 👤</button>
+      <button id="aiMode" class="btn">Play vs AI 🤖</button>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div class="board">
+      <div onclick="handleClick(this)" id="0" class="cell" data-cell></div>
+      <div onclick="handleClick(this)" id="1" class="cell" data-cell></div>
+      <div onclick="handleClick(this)" id="2" class="cell" data-cell></div>
+      <div onclick="handleClick(this)" id="3" class="cell" data-cell></div>
+      <div onclick="handleClick(this)" id="4" class="cell" data-cell></div>
+      <div onclick="handleClick(this)" id="5" class="cell" data-cell></div>
+      <div onclick="handleClick(this)" id="6" class="cell" data-cell></div>
+      <div onclick="handleClick(this)" id="7" class="cell" data-cell></div>
+      <div onclick="handleClick(this)" id="8" class="cell" data-cell></div>
+    </div>
+    
+<button id="resetBtn" class="btn" style="margin-top: 80px;">Reset</button>
+<button id="changeModeBtn" class="btn" style="margin-left: 10px; margin-top: 80px;">Change Mode</button>
+
+  </div>
+  <div id="winnerModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <p id="winnerMessage"></p>
+    <button id="restartBtn" class="btn">Play Again</button>
+  </div>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
